@@ -1,5 +1,5 @@
 const { createServer } = require("http");
-const app = require("./public/build/bundle");
+const app = require("./public/build/bundle.js");
 
 createServer((req, res) => {
   const { html } = app.render({ url: req.url });
@@ -7,7 +7,7 @@ createServer((req, res) => {
   res.write(`
     <!DOCTYPE html>
     <div id="app">${html}</div>
-    <script src="/public/build/bundle.js"></script>
+    <script src="/build/bundle.js"></script>
   `);
 
   res.end();
