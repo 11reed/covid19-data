@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Tim\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Tim\AppData\Local\atom\bin;C:\Users\Tim\AppData\Local\Yarn\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Go\bin;C:\Users\Tim\.cargo\bin;C:\Users\Tim\AppData\Local\atom\bin;C:\Users\Tim\AppData\Local\Yarn\bin;C:\Users\Tim\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\Tim\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tim\AppData\Roaming\npm;C:\Program Files (x86)\GitHub CLI\;C:\Users\Tim\go\bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  14.11.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Tim\Desktop\covid19-data\node_modules\node-sass\vendor\win32-x64-83\binding.node'
+
+npm manifest: 
+  {
+    "name": "svelte-app",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "start": "sirv public"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^14.0.0",
+      "@rollup/plugin-node-resolve": "^8.0.0",
+      "rollup": "^2.3.4",
+      "rollup-plugin-livereload": "^2.0.0",
+      "rollup-plugin-svelte": "^6.0.0",
+      "rollup-plugin-terser": "^7.0.0",
+      "svelte": "^3.0.0"
+    },
+    "dependencies": {
+      "node-sass": "^5.0.0",
+      "sirv-cli": "^1.0.0",
+      "svelte-preprocess": "^4.5.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
