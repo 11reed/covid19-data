@@ -7,7 +7,7 @@ createServer((req, res) => {
   res.write(`
     <!DOCTYPE html>
     <div id="app">${html}</div>
-    <script src="/build/bundle.js"></script>
+    <script src="/public/build/bundle.js"></script>
   `);
 
   res.end();
