@@ -1,5 +1,5 @@
 const { createServer } = require("http");
-const app = require("./src/App.js");
+const app = require("./public/build/bundle");
 
 createServer((req, res) => {
   const { html } = app.render({ url: req.url });
