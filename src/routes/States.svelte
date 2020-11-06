@@ -41,15 +41,15 @@
 
 <style>
 	:global(body) {
-		font-family: 'Mukta', sans-serif;
-		background-color: #2C3E50;
+	    font-family: 'Mukta', sans-serif;
+	    background-color: #2C3E50;
 	}
 
 	div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color:#5DADE2;
+	   display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   color:#5DADE2;
 	}
 
 	main {
