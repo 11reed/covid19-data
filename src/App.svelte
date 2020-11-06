@@ -21,7 +21,7 @@
 	<li>
 	  	<Menu to="/">Home -</Menu>
 	  	<Menu to="countries">Countries -</Menu>
-		<Menu to="states/">States</Menu>
+		<Menu to="states">States</Menu>
 	</li>
 	<ul>
 	</nav>
