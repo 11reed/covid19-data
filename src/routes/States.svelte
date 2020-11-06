@@ -5,8 +5,8 @@
 	let data = [];
 
 	onMount(async function() {
-    const response = await fetch(url);
-    data = await response.json();
+    	const response = await fetch(url);
+    	data = await response.json();
 	});
 </script>
 
@@ -15,27 +15,27 @@
 </div>
 
 <main>
-	{#each data as stats }
-		<ul>
-            <li>State: <b>{stats.state}</b></li>
+{#each data as stats }
+	<ul>
+           <li>State: <b>{stats.state}</b></li>
             <hr>
             <li>Cases: <b>{stats.cases}</b></li>
-			<hr>
-			<li>Today's cases: <b>{stats.todayCases}</b></li>
-			<hr>
+	    <hr>
+	    <li>Today's cases: <b>{stats.todayCases}</b></li>
+	    <hr>
             <li>Deaths: <b>{stats.deaths}</b></li>
-			<hr>
-			<li>Today's deaths: <b>{stats.todayDeaths}</b></li>
-			<hr>
+	    <hr>
+	    <li>Today's deaths: <b>{stats.todayDeaths}</b></li>
+	    <hr>
             <li>Recovered: <b>{stats.recovered}</b></li>
             <hr>
-			<li>Tests: <b>{stats.tests}</b></li>
-			<hr>
-			<li>Population: <b>{stats.population}</b></li>
-			<hr>
-			<br>
-			<br>
-		</ul>
+	    <li>Tests: <b>{stats.tests}</b></li>
+	    <hr>
+	    <li>Population: <b>{stats.population}</b></li>
+	    <hr>
+	    <br>
+	    <br>
+	</ul>
 {/each}
 </main>
 
@@ -53,28 +53,28 @@
 	}
 
 	main {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		margin:	auto;
-		color: #5DADE2;
-		background-color: #2C3E50;
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  margin: auto;
+	  color: #5DADE2;
+	  background-color: #2C3E50;
 	}
 
 	ul {
-		list-style-type: none;
+	  list-style-type: none;
 	}
 
 	li {
-		font-size: 20px;
+	  font-size: 20px;
 	}
 
 	hr {
-		border: 1px solid #58D68D;
+	  border: 1px solid #58D68D;
   		border-radius: 2px;
 	}
 
 	b {
-		color: #AAB7B8;
+	  color: #AAB7B8;
 	}
 </style>
