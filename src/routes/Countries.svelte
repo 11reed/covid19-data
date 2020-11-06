@@ -5,49 +5,50 @@
 	let data = [];
 
 	onMount(async function() {
-    const response = await fetch(url);
-    data = await response.json();
+    	const response = await fetch(url);
+   	 data = await response.json();
 	});
 </script>
 
 <div>
-	<h1>Countries Data:</h1>
+   <h1>Countries Data:</h1>
 </div>
 
 <main>
-	{#each data as stats }
-		<ul>
-			<li>Country: <b>{stats.country}</b></li>
-			<hr>
-			<li>Cases: <b>{stats.cases}</b></li>
-			<hr>
-			<li>Today's cases: <b>{stats.todayCases}</b></li>
-			<hr>
-			<li>Deaths: <b>{stats.deaths}</b></li>
-			<hr>
-			<li>Today's deaths: <b>{stats.todayDeaths}</b></li>
-			<hr>
-			<li>Recovered: <b>{stats.recovered}</b></li>
-			<hr>
-			<li>Tests: <b>{stats.tests}</b></li>
-			<hr>
-			<li>Population: <b>{stats.population}</b></li>
-			<hr>
-			<img src="{stats.countryInfo.flag}" alt="Country flags">
-			<hr>
-			<br>
-			<br>
-		</ul>
-{/each}
+  {#each data as stats }
+	<ul>
+	   <li>Country: <b>{stats.country}</b></li>
+	   <hr>
+	   <li>Cases: <b>{stats.cases}</b></li>
+	   <hr>
+	   <li>Today's cases: <b>{stats.todayCases}</b></li>
+	   <hr>
+	   <li>Deaths: <b>{stats.deaths}</b></li>
+	   <hr>
+	   <li>Today's deaths: <b>{stats.todayDeaths}</b></li>
+	   <hr>
+	   <li>Recovered: <b>{stats.recovered}</b></li>
+	   <hr>
+	   <li>Tests: <b>{stats.tests}</b></li>
+	   <hr>
+	   <li>Population: <b>{stats.population}</b></li>
+	   <hr>
+	   <img src="{stats.countryInfo.flag}" alt="Country flags">
+	   <hr>
+	   <br>
+	   <br>
+       </ul>
+   {/each}
 </main>
 
 <style>
 	:global(body) {
-		font-family: 'Mukta', sans-serif;
-		background-color: #2C3E50;
+	font-family: 'Mukta', sans-serif;
+	background-color: #2C3E50;
 	}
-	
-	/* may have to put this in the Menu Component
+
+
+/* may have to put this in the Menu Component
 	.link > :global() {
 		text-decoration: none;
 	}
@@ -58,35 +59,35 @@
 	*/
 
 	div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color:#5DADE2;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  color: #5DADE2;
 	}
 
 	main {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		margin: auto;
-		color: #5DADE2;
-		background-color: #2C3E50;
-	}
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  margin: auto;
+	  color: #5DADE2;
+	  background-color: #2C3E50;
+}
 
 	ul {
-		list-style-type: none;
+	  list-style-type: none;
 	}
 
 	li {
-		font-size: 20px;
+	  font-size: 20px;
 	}
 
 	hr {
-		border: 1px solid #58D68D;
-  		border-radius: 2px;
+	  border: 1px solid #58D68D;
+	  border-radius: 2px;
 	}
 
 	b {
-		color: #AAB7B8;
+	  color: #AAB7B8;
 	}
 </style>
