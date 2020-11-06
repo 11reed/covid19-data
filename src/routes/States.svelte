@@ -35,7 +35,7 @@
 	    <hr>
 	    <br>
 	    <br>
-	</ul>
+      </ul>
 {/each}
 </main>
 
