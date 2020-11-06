@@ -3,7 +3,6 @@
 </svelte:head>
 
 <script>
-	// lightgreen #48C9B0
 	import { Router, Route } from "svelte-routing";
 	
 	import Menu from './components/Menu.svelte';
@@ -19,16 +18,16 @@
 	<nav>
 	<ul>
 	<li>
-	  	<Menu to="/">Home -</Menu>
-	  	<Menu to="countries">Countries -</Menu>
-		<Menu to="states">States</Menu>
-	</li>
+	  <Menu to="/">Home -</Menu>
+	  <Menu to="countries">Countries -</Menu>
+	  <Menu to="states">States</Menu>
+        </li>
 	<ul>
 	</nav>
 	<div>
-	  	<Route path="countries" component="{Countries}" />
-		<Route path="states" component="{States}" />
-	  	<Route path="/" component="{Home}" />
+	  <Route path="countries" component="{Countries}" />
+	  <Route path="states" component="{States}" />
+	  <Route path="/" component="{Home}" />
 	</div>
 </Router>
 
