@@ -11,7 +11,7 @@
 </script>
 
 <div>
-	<h1>States Data:</h1>
+  <h1>States Data:</h1>
 </div>
 
 <main>
