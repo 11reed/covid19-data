@@ -1,3 +1,3 @@
-project that retrieves covid-19 data and puts it into data sets
+project that fetches covid-19 data
 
 https://covid19-data-reed.netlify.app/
