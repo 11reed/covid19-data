@@ -71,7 +71,7 @@
 	  margin: auto;
 	  color: #5DADE2;
 	  background-color: #2C3E50;
-}
+	}
 
 	ul {
 	  list-style-type: none;
