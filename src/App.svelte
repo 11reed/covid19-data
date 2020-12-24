@@ -22,7 +22,7 @@
 	  <Menu to="countries">Countries -</Menu>
 	  <Menu to="states">States</Menu>
         </li>
-	<ul>
+	</ul>
 	</nav>
 	<div>
 	  <Route path="countries" component="{Countries}" />
