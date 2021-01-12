@@ -47,16 +47,6 @@
 	background-color: #2C3E50;
 	}
 
-	/* may have to put this in the Menu Component
-	.link > :global() {
-		text-decoration: none;
-	}
-
-	:global(a) {
-		color:#5DADE2;
-	}
-	*/
-
 	div {
 	  display: flex;
 	  align-items: center;
