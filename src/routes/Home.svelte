@@ -11,17 +11,12 @@
 
 
 <style>
-	:global(body) {
-	   font-family: 'Mukta', sans-serif;
-	   background-color: #212F3D;
-	}
-
 	div {
 	   display: flex;
 	   align-items: center;
 	   justify-content: center;
 	   flex-flow: column;
-           color:#5DADE2 ;
+	   color: #239B56;
 	}
 
 	h1 {

@@ -2,7 +2,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
 </svelte:head>
 
-<script>
+<script lang="ts">
 	import { Router, Route } from "svelte-routing";
 	
 	import Menu from './components/Menu.svelte';
@@ -11,17 +11,19 @@
 	import Countries from './routes/Countries.svelte';
 	import States from './routes/States.svelte';
 
-	export const routeUrl = "";
+	export const routeUrl = '';
 </script>
 
 <Router url="{routeUrl}">
 	<nav>
 	<ul>
 	<li>
-	  <Menu to="/">Home -</Menu>
-	  <Menu to="countries">Countries -</Menu>
+	  <Menu to="/">Home</Menu>
+	  <br>
+	  <Menu to="countries">Countries</Menu>
+	  <br>
 	  <Menu to="states">States</Menu>
-        </li>
+    </li>
 	</ul>
 	</nav>
 	<div>
@@ -31,16 +33,10 @@
 	</div>
 </Router>
 
-
 <style>
 	:global(body) {
 		font-family: 'Mukta', sans-serif;
-		background-color: #212F3D;
-	}
-
-	:global(a) {
-		text-decoration: none;
-		color: #5DADE2;
+		background-color:  #17202A;
 	}
 	
 	nav {
