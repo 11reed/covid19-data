@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
+	
 	interface CountriesData {
 		country: string;
 		cases: number;
