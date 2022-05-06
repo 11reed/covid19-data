@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
-	import { Router, Route } from "svelte-routing";
+	import { Router, Route } from 'svelte-routing';
 	
 	import Menu from './components/Menu.svelte';
 
