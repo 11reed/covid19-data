@@ -17,7 +17,7 @@
 	const url: string = 'https://disease.sh/v3/covid-19/countries';
 	let data: CountriesData[] = [];
 
-	onMount(async function() {
+	onMount(async () => {
     	const response = await fetch(url);
    	 data = await response.json();
 	});

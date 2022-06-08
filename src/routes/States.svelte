@@ -15,7 +15,7 @@
 	const url: string = 'https://disease.sh/v3/covid-19/states';
 	let data: StatesData[] = [];
 
-	onMount(async function() {
+	onMount(async () => {
     	const response = await fetch(url);
     	data = await response.json();
 	});
